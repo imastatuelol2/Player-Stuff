@@ -1,0 +1,19 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("WS And JP Script", "Sentinel")
+local Tab = Window:NewTab("Home")
+ 
+local Section = Tab:NewSection("Welcome Player")
+local Section = Tab:NewSection("Script In Script Tab, Enjoy!")
+local Section = Tab:NewSection("by: cats4live#5223")
+ 
+local Tab = Window:NewTab("Script")
+ 
+local Section = Tab:NewSection("Script")
+ 
+Section:NewSlider("Walkspeed", "Changes How Fast You Walk.", 250, 16, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+ 
+Section:NewSlider("JumpPower", "Changes How High You Jump.", 250, 50, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
